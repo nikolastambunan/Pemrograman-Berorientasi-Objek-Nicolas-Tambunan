@@ -1,0 +1,1 @@
+double aValue = 8933.234;
