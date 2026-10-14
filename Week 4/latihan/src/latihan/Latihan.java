@@ -8,15 +8,23 @@ package latihan;
  *
  * @author Nikolas
  */
-public class Latihan {
-
-    /**==
-     * @param args the command line arguments
-     */
+// 1. Kelas Induk (Superclass)
+class Kendaraan {
     
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
+    void bergerak() {
+        System.out.println("Kendaraan ini bergerak.");
+    }
+}
+// 2. Kelas Turunan (Subclass) yang melakukan Overriding
+class Mobil extends Kendaraan {
+    @Override
+    void bergerak() {
+        System.out.println("Mobil bergerak cepat dengan 4 roda.");
     }
     
+    void klakson() {
+        System.out.println("Telolet!");
+    }
 }
+
+
