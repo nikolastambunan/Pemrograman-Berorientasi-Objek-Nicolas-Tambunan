@@ -15,48 +15,43 @@ public class Dog {
     String color;
 
     // Constructor
-    public Dog(String name, String breed, int age,
-               String color)
-    {
+    public Dog(String name, String breed, int age, String color) {
         this.name = name;
         this.breed = breed;
         this.age = age;
         this.color = color;
     }
 
-    // method 1
+    // Method 1
     public String getName() {
-      return name;
+        return name;
     }
 
-    // method 2
+    // Method 2
     public String getBreed() {
-      return breed;
+        return breed;
     }
 
-    // method 3
+    // Method 3
     public int getAge() {
-      return age;
+        return age;
     }
 
-    // method 4
+    // Method 4
     public String getColor() {
-      return color;
+        return color;
     }
 
-    @Override public String toString()
-    {
+    @Override
+    public String toString() {
         return ("Name is: " + this.getName()
                 + "\nBreed, age, and color are: "
                 + this.getBreed() + "," + this.getAge()
                 + "," + this.getColor());
     }
 
-    public static void main(String[] args)
-    {
-        Dog tuffy
-            = new Dog("tuffy", "papillon", 5, "white");
+    public static void main(String[] args) {
+        Dog tuffy = new Dog("tuffy", "papillon", 5, "white");
         System.out.println(tuffy.toString());
     }
 }
-    
